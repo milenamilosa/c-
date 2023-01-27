@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int min, max = 0;
+    bool prime = false;
+    
+    while(min <= 1 || max <= min)
+    {
+        printf("min: ");
+        cin >> min;
+        printf("max: ");
+        cin >> max;
+    }
+    
+    for(int i = min; i <= max; ++i)
+    {
+        if(i == 2 || i == 3)
+            prime = true;
+        
+        for(int j = 2; j * j <= i; ++j)
+        {
+            if(i % j == 0)
+            {
+                prime = false;
+                break;
+            }
+            
+            prime = true;
+        }
+        
+        if(prime == true)
+            printf("%d ", i);
+            
+        prime = false;
+    }
+}
