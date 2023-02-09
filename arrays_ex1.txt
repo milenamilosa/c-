@@ -1,0 +1,56 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int size = 0;
+    float result = 0;
+    
+    char choice;
+    
+    while(size < 1)
+    {
+        printf("Number of weeks taking CS50: ");
+        cin >> size;
+    }
+    
+    int hours[size];
+    
+    for(int i = 0; i < size; i++)          //инициализация (заполнение данными) одномерного статического массива (hours[])
+    {
+        printf("\nWeek %d HW Hours: ", i + 1);
+        cin >> hours[i];
+    }
+    
+    for(int i = 0; i < size; i++)        //суммирование всех элементов массива (hours[])
+    {
+        result += hours[i];
+    }
+    
+    printf("Enter 'T' for total hours, 'A' for average hours per week: ");
+    cin >> choice;
+    
+    
+    if(choice == 'T')
+    {
+        printf("\nTotal = %.0f", result);
+    }
+    
+    else if(choice == 'A')
+    {
+        result /= size;
+        
+        printf("\nAverage = %.2f", result);
+    }
+    
+    else
+    {
+        printf("\nChoice is wrong!");
+    }
+
+    for(int i = 0; i < size; i++)          //вывод одномерного статического массива (hours[])
+    {
+        printf("\n[%d] = %d", i, hours[i]);
+    }
+}
