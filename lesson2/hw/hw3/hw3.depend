@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1678362525 source:d:\users\maria\desktop\p\c++\c++ hw\lesson2\hw\hw3\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+

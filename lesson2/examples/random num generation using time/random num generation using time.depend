@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1678359197 source:d:\users\maria\desktop\p\c++\c++ hw\lesson2\examples\random num generation using time\main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+
