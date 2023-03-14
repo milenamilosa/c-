@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1678808323 source:d:\users\maria\desktop\p\c++\c++ hw\lesson3\examples\overload_doodle\main.cpp
+	<iostream>
+	<time.h>
+	<stdlib.h>
+
